@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/send_nfc.py",
-      "use": "@vercel/python"
-    }
-  ]
-}
