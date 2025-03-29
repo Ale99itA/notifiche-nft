@@ -1,8 +1,9 @@
+import os
 import telebot
 from flask import Flask, request
 
-TOKEN = "7099398708:AAEa1YSsgWqJNHcQjc8gyayeWT5xDl9eK-Q"
-CHAT_ID = "359458947"  # ID del gruppo o della persona che riceverà la notifica
+TOKEN = os.environ.get('7099398708:AAEa1YSsgWqJNHcQjc8gyayeWT5xDl9eK-Q')
+CHAT_ID = os.environ.get('359458947')
 bot = telebot.TeleBot(TOKEN)
 
 app = Flask(__name__)
