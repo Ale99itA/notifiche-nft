@@ -2,8 +2,8 @@ import os
 import telebot
 from flask import Flask, request
 
-TOKEN = os.environ.get('7099398708:AAEa1YSsgWqJNHcQjc8gyayeWT5xDl9eK-Q')
-CHAT_ID = os.environ.get('359458947')
+TOKEN = os.environ.get('TELEGRAM_TOKEN')
+CHAT_ID = os.environ.get('CHAT_ID')
 bot = telebot.TeleBot(TOKEN)
 
 app = Flask(__name__)
