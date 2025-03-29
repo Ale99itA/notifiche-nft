@@ -18,10 +18,10 @@ def send_nfc():
     
     # Ottieni la data e l'ora correnti
     now = datetime.now()
-    current_time = now.strftime("%Y-%m-%d %H:%M:%S")
+    current_time = now.strftime("%H:%M:%S")
     
     # Crea un messaggio personalizzato utilizzando il device_id
-    message = f"{device_id} è arrivato sano e salvo alle {current_time} <3"
+    message = f"🏠 {device_id} è arrivato sano e salvo alle {current_time} ❤️"
     
     # Invia il messaggio tramite il bot Telegram
     bot.send_message(CHAT_ID, message)
